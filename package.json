@@ -22,6 +22,6 @@
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "sass-boilerplate": "git+ssh://git@git.bgondy.com:bgondy/sass-boilerplate.git"
+    "sass-boilerplate": "git+https://git@github.com:webqamdev/sass-boilerplate.git"
   }
 }
