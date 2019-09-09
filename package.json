@@ -1,0 +1,27 @@
+{
+  "name": "@bgondy/vue-cli-plugin-sass-boilerplate",
+  "version": "0.1.0",
+  "description": "Vue CLI 3 plugin ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node postinstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.bgondy.com:bgondy/vue-cli-plugin-sass-boilerplate.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-cli",
+    "scss",
+    "sass",
+    "boilerplate"
+  ],
+  "author": "Benjamin Gondy",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "sass-boilerplate": "git+ssh://git@git.bgondy.com:bgondy/sass-boilerplate.git"
+  }
+}
