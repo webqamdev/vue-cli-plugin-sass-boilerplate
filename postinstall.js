@@ -25,8 +25,8 @@ function moveFiles(src, dst) {
   });
 }
 
-const SRC = 'node_modules/sass-boilerplate/src/scss';
-const DEST = 'generator/template/src/scss';
+const SRC = './node_modules/sass-boilerplate/src/scss';
+const DEST = './generator/template/src/scss';
 
 console.log(`Copying files from ${SRC} to ${DEST}…`);
 
