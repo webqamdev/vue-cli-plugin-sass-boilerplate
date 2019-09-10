@@ -1,6 +1,6 @@
 {
   "name": "@webqam/vue-cli-plugin-sass-boilerplate",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Vue CLI 3 plugin to add an opinionated Sass Boilerplate in your Vue project",
   "main": "index.js",
   "scripts": {
