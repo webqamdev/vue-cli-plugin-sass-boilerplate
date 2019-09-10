@@ -26,7 +26,7 @@ function moveFiles(src, dst) {
   });
 }
 
-const SRC = path.resolve(__dirname, './node_modules/sass-boilerplate/src/scss');
+const SRC = path.resolve(path.dirname(require.resolve('sass-boilerplate')), 'scss');
 const DEST = path.resolve(__dirname, './generator/template/src/scss');
 
 console.log(`Copying files from ${SRC} to ${DEST}…`);
