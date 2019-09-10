@@ -12,7 +12,7 @@ You can also install it with [Vue UI](https://cli.vuejs.org/guide/creating-a-pro
 
 ## Usage
 
-This plugin will import an opinionated [Sass boilerplate](https://github.com/webqamdev/sass-boilerplate), install its dependencies and update the project configuration.
+This plugin will import an opinionated [Sass boilerplate](https://github.com/webqamdev/sass-boilerplate) in `src/scss`, install its dependencies and update the project configuration.
 
 ## License
 
