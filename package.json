@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.bgondy.com:bgondy/vue-cli-plugin-sass-boilerplate.git"
+    "url": "git@github.com:webqamdev/vue-cli-plugin-sass-boilerplate.git"
   },
   "keywords": [
     "vue",
