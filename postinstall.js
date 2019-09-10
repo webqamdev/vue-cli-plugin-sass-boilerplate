@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const path = require('path');
 
 function moveFiles(src, dst) {
   return fs.readdir(src, { withFileTypes: true }).then(list => {
@@ -25,8 +26,8 @@ function moveFiles(src, dst) {
   });
 }
 
-const SRC = './node_modules/sass-boilerplate/src/scss';
-const DEST = './generator/template/src/scss';
+const SRC = path.resolve(__dirname, './node_modules/sass-boilerplate/src/scss');
+const DEST = path.resolve(__dirname, './generator/template/src/scss');
 
 console.log(`Copying files from ${SRC} to ${DEST}…`);
 
