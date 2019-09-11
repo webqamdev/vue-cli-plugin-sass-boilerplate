@@ -1,3 +1,4 @@
 node_modules
 generator/template
 .idea
+test-vue

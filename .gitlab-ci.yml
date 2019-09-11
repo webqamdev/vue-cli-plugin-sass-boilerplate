@@ -1,0 +1,26 @@
+stages:
+  - lint
+  - test
+  - deploy
+
+lint:
+  stage: lint
+  image: node:dubnium
+  script:
+    - npm ci
+    - npm run prettier:check
+
+test:dubnium:
+  stage: test
+  image: node:dubnium
+  extends: .test-script
+  script:
+    - npm i -g @vue/cli
+    - pwd
+    - ls
+    - vue create --preset ./test-preset.json $projectName
+    - cd $projectName
+    - npm install ../
+    - vue invoke @webqam/vue-cli-plugin-sass-boilerplate
+  variables:
+    projectName: test-vue
