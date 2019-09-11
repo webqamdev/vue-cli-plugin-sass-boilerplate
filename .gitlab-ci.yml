@@ -13,7 +13,6 @@ lint:
 test:dubnium:
   stage: test
   image: node:dubnium
-  extends: .test-script
   script:
     - npm i -g @vue/cli
     - pwd
