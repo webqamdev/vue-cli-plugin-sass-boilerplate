@@ -1,7 +1,7 @@
 stages:
   - lint
   - test
-  - deploy
+  - publish
 
 lint:
   stage: lint
@@ -23,3 +23,14 @@ test:dubnium:
     - vue invoke @webqam/vue-cli-plugin-sass-boilerplate
   variables:
     projectName: test-vue
+
+publish:
+  stage: publish
+  image: node:dubnium
+  script:
+    - '[[ -z NPM_TOKEN ]] && exit 1'
+    - echo '//registry.npm.js.org/:_authToken=${NPM_TOKEN}' > .npmrc
+    - npm publish --access public
+  only:
+    - /^(0|[1-9]\d*)\.(0|[1-9≥]\d*)\.(0|[1-9]\d*)(-(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$/
+  allow_failure: true
