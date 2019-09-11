@@ -1,0 +1,6 @@
+node_modules
+generator/template
+.idea
+.gitlab-ci.yml
+.prettierrc
+test-preset.json
