@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "sass-boilerplate": "git+https://git@github.com:webqamdev/sass-boilerplate.git"
+    "sass-boilerplate": "git+https://github.com/webqamdev/sass-boilerplate.git"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
