@@ -1,11 +1,14 @@
 {
   "name": "@webqam/vue-cli-plugin-sass-boilerplate",
-  "version": "0.1.5",
+  "version": "0.2.0-5",
   "description": "Vue CLI 3 plugin to add an opinionated Sass Boilerplate in your Vue project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node postinstall.js"
+    "postinstall": "node postinstall.js",
+    "prettier": "prettier \"**/*.js\" \"**/*.json\" \"**/*.md\"",
+    "prettier:check": "npm run prettier -- --check",
+    "prettier:fix": "npm run prettier -- --write"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,9 @@
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "sass-boilerplate": "git+https://git@github.com:webqamdev/sass-boilerplate.git"
+    "sass-boilerplate": "git+https://github.com/webqamdev/sass-boilerplate.git"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
   }
 }
