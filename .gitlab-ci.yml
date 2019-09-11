@@ -15,11 +15,11 @@ test:dubnium:
   image: node:dubnium
   script:
     - npm i -g @vue/cli
-    - pwd
-    - ls
-    - vue create --preset ./test-preset.json $projectName
+    - cwd=$(pwd)
+    - cd /
+    - vue create --preset "$cwd/test-preset.json" $projectName
     - cd $projectName
-    - npm install ../
+    - npm install "$cwd"
     - vue invoke @webqam/vue-cli-plugin-sass-boilerplate
   variables:
     projectName: test-vue
