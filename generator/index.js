@@ -8,7 +8,7 @@ module.exports = api => {
     },
     vue: {
       css: {
-        loaderOptions: { scss: { data: '@import "@/scss/lib/_lib.scss";' } },
+        loaderOptions: { scss: { prependData: '@import "@/scss/lib/_lib.scss";' } },
       },
     },
   });
