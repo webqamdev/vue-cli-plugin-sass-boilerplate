@@ -14,6 +14,7 @@ test:dubnium:
   stage: test
   image: node:dubnium
   script:
+    - export VUE_CLI_SKIP_DIRTY_GIT_PROMPT=true
     - npm i -g @vue/cli
     - cwd=$(pwd)
     - cd /
