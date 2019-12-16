@@ -22,6 +22,7 @@ test:dubnium:
     - cd $projectName
     - npm install "$cwd"
     - vue invoke @webqam/vue-cli-plugin-sass-boilerplate
+    - npm run build
   variables:
     projectName: test-vue
 
